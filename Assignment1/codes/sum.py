@@ -1,24 +1,32 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Define the signal function y(n)
-def y_n(n):
-    return (50 * n + 10 * n**2) * (n >= 0)
+# Import the data from the text file
+data = np.loadtxt("result_terms.txt", skiprows=1)
 
-# Generate values for n from -2 to 10
-n_values = np.arange(-2, 11)
+# Clear all the previous figures
+plt.close("all")
 
-# Calculate corresponding y(n) values
-y_values = y_n(n_values)
+# Extract the first 15 terms of the data
+y_n = data[:15]
+highlighted_index = 6
 
-# Highlight stem when n = 6
-highlight_index = np.where(n_values == 6)[0][0]
+# Plot the graph
+plt.stem(range(1, len(data) + 1), y_n, markerfmt='bo', linefmt='b-', basefmt='r-', label=r'Simulation') 
+plt.stem([highlighted_index], [data[highlighted_index - 1]], linefmt='r-', markerfmt='ro', basefmt=' ')
+plt.scatter(range(1, len(data) + 1), data, color='orange', marker='x', s=100, label=r'Analysis')
 
-# Plot the signal
-plt.stem(n_values, y_values, linefmt='b-', markerfmt='bo', basefmt='r-')
-plt.stem(n_values[highlight_index], x_values[highlight_index], linefmt='g-', markerfmt='go', basefmt='r-')  # Highlight stem
+# Set labels and title
 plt.xlabel('n')
 plt.ylabel('y(n)')
-plt.title('Plot of y(n) = (50n + 10n^2)u(n)')
+plt.xticks(range(1, len(data) + 1))
+
+# Add legend
+plt.legend()
+
+# Add grid
 plt.grid(True)
-plt.savefig('Sum.png')
+
+# Save the plot as an image
+plt.savefig("fig1.png")
+
