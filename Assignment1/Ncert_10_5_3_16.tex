@@ -67,16 +67,16 @@
 \centering
 \input{Tables/Table1}
 \caption{Given parameters}
-\label{table:10.5.3.16}
+\label{table:Parameters list}
 \end{table}
 
-From \eqref{eq:11.9.5.26.2}
+From \eqref{eq:ztrans}
 
 \begin{align}
     X(z) &= \frac{x(0)}{1-z^{-1}} - \frac{20.z^{-1}}{(1-z^{-1})^2} ; |z|>1 \\
     \because y(n) &= x(n)*u(n) \\
     Y(z) &= X(z)U(z) \\
-    Y(z) &= \frac{x(0)}{(1-z^{-1})^2} - \frac{20.z^{-1}}{(1-z^{-1})^3} ; |z|>1 
+    \implies Y(z) &= \frac{x(0)}{(1-z^{-1})^2} - \frac{20.z^{-1}}{(1-z^{-1})^3} ; |z|>1 
 \end{align}
 
 Using contour integration for inverse Z transformation, 
@@ -86,12 +86,12 @@ Using contour integration for inverse Z transformation,
     &= \frac{1}{2\pi j}\int \frac{x(0).z^{7}}{(z-1)^{2}} dz - \frac{1}{2\pi j}\int \frac{20.z^{7}}{(z-1)^{3}} dz\\
     \because R&=\frac{1}{\brak {m-1}!}\lim\limits_{z\to a}\frac{d^{m-1}}{dz^{m-1}}\brak {{(z-a)}^{m}f\brak z}\\
     R_1 &=\frac{1}{1!}\lim\limits_{z\to 1}\frac{d}{dz}\brak {(z-1)^2.\frac{x(0).z^{7}}{(z-1)^{2}}}\\
-    &= 7 \times x(0)\\
+    &= 7x(0)\\
     R_2 &=\frac{1}{2!}\lim\limits_{z\to 1}\frac{d^2}{dz^2}\brak {(z-1)^3.\frac{-20.z^{7}}{(z-1)^{3}}}\\
     &= -420\\
     \implies y(6) &= R_1 + R_2 \\
-    700 &= -420 + 7 \times x(0) \\
-    \therefore x(0) &= 160
+    700 &= -420 + 7x(0) \\
+    \implies x(0) &= 160
 \end{align}
 
 The value of each of the prizes is 160,140,120,100,80,60,40.
@@ -99,7 +99,7 @@ The value of each of the prizes is 160,140,120,100,80,60,40.
 \begin{figure}[h]
   \centering
   \includegraphics[width=\columnwidth]{figs/fig1.png}
-  \caption{y(n) = $170n-10n^2$}
+  \caption{y(n) = $170n - 10n^2$}
   \label{fig:graph}
 \end{figure}
 
