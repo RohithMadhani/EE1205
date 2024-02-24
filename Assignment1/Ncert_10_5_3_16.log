@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.16)  24 FEB 2024 05:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.16)  24 FEB 2024 07:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1327,7 +1327,7 @@ LaTeX Font Info:    Trying to load font information for TS1+txr on input line 5
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ts1txr.fd
 File: ts1txr.fd 2000/12/15 v3.1
 )
-(./Tables/Table1.tex
+(./tables/table1.tex
 \gnumericTableWidth=\skip73
 \gnumericTableWidthComplete=\skip74
 \gnumericMultiRowLength=\skip75
@@ -1359,17 +1359,14 @@ Package pdftex.def Info: figs/fig1.png  used on input line 101.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `Ncert_10_5_3_16.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 31801 strings out of 476091
- 626222 string characters out of 5794081
+ 31800 strings out of 476091
+ 626205 string characters out of 5794081
  1884330 words of memory out of 5000000
- 51490 multiletter control sequences out of 15000+600000
+ 51489 multiletter control sequences out of 15000+600000
  589892 words of font info for 203 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  101i,13n,96p,1183b,436s stack positions out of 10000i,1000n,20000p,200000b,200000s
