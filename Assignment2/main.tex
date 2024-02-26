@@ -65,36 +65,23 @@
 \label{table:11.9.5.4}
 \end{table}
 
-To calculate the first number between 200 and 400 divisible by 7 we can use modulo and calculate the remainder when 200 is divided by 7.
+The first and last term of the AP are 203 and 399 respectively.
 \begin{align}
-    \implies 200mod7 &= 4 \\
-    (200 + 3)mod7 &= 4 + 3 \\
-    203mod7 &= 0 \\
-    \therefore x(0) &= 203
-\end{align}
-
-Similarly for last number between 200 and 400 divisible by 7 we can use modulo and calculate the remainder when 400 is divided by 7. 
-\begin{align}
-    \implies 400mod7 &= 1 \\
-    (400 - 1)mod7 &= 1-1 \\
-    399mod7 &= 0 \\
-    \therefore x(l) &= 399 
+    \implies x(n) &= (203 + 7n)u(n) 
 \end{align}
 
 To calculate the number of terms in the AP,
 \begin{align}
-    x(l) &= x(0) + 7l \\
-    399 &= 203 + 7l \\
-    \implies l &= 28 \\
-    \therefore x(n) &= (203 + 7n)u(n) 
+    399 &= 203 + 7n \\
+    \implies n &= 28 \\
 \end{align}
 
-From \eqref{eq:11.9.5.26.2}
+From \eqref{eq:ztrans}
 \begin{align}
     X(z) &= \frac{203}{1-z^{-1}} + \frac{7.z^{-1}}{(1-z^{-1})^2} ; |z|>1 \\
     \because y(n) &= x(n)*u(n) \\
     Y(z) &= X(z)U(z) \\
-    Y(z) &= \frac{203}{(1-z^{-1})^2} + \frac{7.z^{-1}}{(1-z^{-1})^3} ; |z|>1 
+    \implies Y(z) &= \frac{203}{(1-z^{-1})^2} + \frac{7.z^{-1}}{(1-z^{-1})^3} ; |z|>1 
 \end{align}
 
 Using Contour integration for inverse Z transform,
@@ -108,7 +95,7 @@ Using Contour integration for inverse Z transform,
     R_2 &=\frac{1}{2!}\lim\limits_{z\to 1}\frac{d^2}{dz^2}\brak {(z-1)^3.\frac{7.z^{29}}{(z-1)^{3}}}\\
     &= \frac{7 \times 29 \times 28}{2!} = 2842\\
     \implies y(28) &= R_1 + R_2 \\
-    \therefore y(28) &= 8729 
+    \implies y(28) &= 8729 
 \end{align}
 
 \begin{figure}[h]
