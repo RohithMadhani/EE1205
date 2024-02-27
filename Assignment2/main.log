@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.16)  26 FEB 2024 09:21
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2024.1.16)  27 FEB 2024 02:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1296,7 +1296,7 @@ Overfull \hbox (0.88728pt too wide) detected at line 99
  []
 
 
-Underfull \vbox (badness 5119) has occurred while \output is active []
+Underfull \vbox (badness 6893) has occurred while \output is active []
 
 <figs/fig1.png, id=7, 462.528pt x 346.896pt>
 File: figs/fig1.png Graphic file (type png)
@@ -1310,16 +1310,13 @@ Package pdftex.def Info: figs/fig1.png  used on input line 103.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 30444 strings out of 476091
- 598951 string characters out of 5794081
- 1887330 words of memory out of 5000000
+ 30443 strings out of 476091
+ 598938 string characters out of 5794081
+ 1886330 words of memory out of 5000000
  50139 multiletter control sequences out of 15000+600000
  591834 words of font info for 206 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
@@ -1333,10 +1330,10 @@ fb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on main.pdf (1 page, 74099 bytes).
+Output written on main.pdf (1 page, 74075 bytes).
 PDF statistics:
- 88 PDF objects out of 1000 (max. 8388607)
- 64 compressed objects within 1 object stream
- 21 named destinations out of 1000 (max. 500000)
+ 87 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
+ 20 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 
