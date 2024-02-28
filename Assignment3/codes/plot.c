@@ -2,6 +2,13 @@
 #include <stdlib.h>
 #include <math.h>
 
+double u_t_minus_1(double t) {
+    if (t >= 1)
+        return 1; // u(t-1) is 1 for t >= 1
+    else
+        return 0; // u(t-1) is 0 for t < 1
+}
+
 void linspace(double start, double end, int num_points, const char *filename) {
     // Calculate the step size
     double step = (end - start) / (num_points - 1);
@@ -16,7 +23,7 @@ void linspace(double start, double end, int num_points, const char *filename) {
     // Generate and write points to file
     for (int i = 0; i < num_points; i++) {
         double value = start + i * step;
-        double y_value = 1.05 * (1 - exp(-(value - 1) / 2));
+        double y_value = 1.05 * (1 - exp(-(value - 1) / 2))*u_t_minus_1(value);
         fprintf(file, "%lf %lf\n", value, y_value);
     }
 

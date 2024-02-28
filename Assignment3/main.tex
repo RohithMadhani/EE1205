@@ -69,11 +69,6 @@ At time $t = 0$, a step change of +1 unit is introduced in the input of this ins
 \label{table:gate23ch62}
 \end{table}
 
-\begin{align}
-    \mathcal{L}(e^{-at}) &\system{} \frac{1}{s+a} \label{eq:LaplaceTransform1} \\
-    \mathcal{L}(f(t-1)) &\system{} e^{-s}F(s) \label{eq:LaplaceTransform2}
-\end{align}
-
 \begin{tikzpicture}
 \centering
     % Draw the main box
@@ -103,10 +98,20 @@ By splitting into partial fractions,we get
     Y(s) &= [\frac{1.05}{s} - \frac{1.05}{s+0.5}]e^{-s}
 \end{align}
 
-From \eqref{eq:LaplaceTransform1} and \eqref{eq:LaplaceTransform2}, we get inverse laplace as 
+As we know,
+\begin{align}
+    \mathcal{L}[e^{-at}] &\system{} \frac{1}{s+a} \\
+    \mathcal{L}[f(t-1)] &\system{} e^{-s}F(s)
+\end{align}
+
+By taking inverse laplce we get,
 
 \begin{align}
-    y(t) &= 1.05[1-e^{\frac{-(t-1)}{2}}] \\
+    y(t) &= 1.05[1-e^{\frac{-(t-1)}{2}}]u(t-1) \\
+    \implies y(t) &= \begin{cases}
+        0 & t < 1, \\
+        1.05[1-e^{\frac{-(t-1)}{2}}] & t \geq 1
+    \end{cases} \\
     \frac{1}{1.05} &= 1-e^{\frac{-(t-1)}{2}} \\
     \frac{-(t-1)}{2} &= ln(\frac{0.05}{1.05}) \\
     \implies t &= 7.073 
